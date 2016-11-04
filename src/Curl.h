@@ -11,7 +11,7 @@ using std::array;
 using std::vector;
 
 #define ITERATE( x__ ) \
-    for (auto unused__ : array<char, (x__)>{})
+    for (auto unused__ = (x__); (unused__) > 0; --unused__)
 
 
 class Curl
